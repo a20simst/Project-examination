@@ -2,6 +2,7 @@ package com.example.project_examination;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
         omOss.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent omOssActivity = new Intent(MainActivity.this,  AboutUs.class);
+                startActivity(omOssActivity);
             }
         });
     }
