@@ -7,9 +7,11 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -34,6 +36,18 @@ public class ListFoodActivity extends AppCompatActivity {
         listView = findViewById(R.id.list_view);
         adapter = new ArrayAdapter<Food>(ListFoodActivity.this, R.layout.list_food_textview,foodList);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Food f = foodList.get(position);
+                f.getName();
+                f.getLocation();
+                String msg = " Name: " + f.getName()  + " Location: " + f.getLocation() ;
+                Toast.makeText(ListFoodActivity.this, msg , Toast.LENGTH_LONG).show();
+            }
+        });
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
