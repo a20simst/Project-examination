@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mainActivity.setBackgroundColor(0xFFFFFFFF);
-                aboutUsActivity.setBackgroundColor(0xFFFFFFFF);
+
 
 
             }
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mainActivity.setBackgroundColor(Color.parseColor("#000000"));
-                aboutUsActivity.setBackgroundColor(Color.parseColor("#000000"));
+
 
             }
         });
