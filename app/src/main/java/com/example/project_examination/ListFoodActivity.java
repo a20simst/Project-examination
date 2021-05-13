@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -39,6 +40,8 @@ public class ListFoodActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<Food>(ListFoodActivity.this, R.layout.list_food_textview,foodList);
         listView.setAdapter(adapter);
         myWebView = (WebView) findViewById(R.id.my_webview);
+        WebSettings webSettings = myWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
