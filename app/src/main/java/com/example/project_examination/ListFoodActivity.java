@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -42,6 +43,9 @@ public class ListFoodActivity extends AppCompatActivity {
         myWebView = (WebView) findViewById(R.id.my_webview);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        WebViewClient myWebViewClient = new WebViewClient();
+        myWebView.setWebViewClient(myWebViewClient);
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
