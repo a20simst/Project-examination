@@ -38,6 +38,7 @@ public class ListFoodActivity extends AppCompatActivity {
         listView = findViewById(R.id.list_view);
         adapter = new ArrayAdapter<Food>(ListFoodActivity.this, R.layout.list_food_textview,foodList);
         listView.setAdapter(adapter);
+        myWebView = (WebView) findViewById(R.id.my_webview);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
