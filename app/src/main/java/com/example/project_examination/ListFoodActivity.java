@@ -45,14 +45,19 @@ public class ListFoodActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         WebViewClient myWebViewClient = new WebViewClient();
         myWebView.setWebViewClient(myWebViewClient);
+        myWebView.loadUrl("https://www.google.se/?hl=sv");
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Food f = foodList.get(position);
+
                 f.getName();
                 f.getLocation();
+                f.getAuxdata();
+
+                myWebView.loadUrl(f.getAuxdata().getWiki());
                 String msg = " Name: " + f.getName()  + " Location: " + f.getLocation() ;
                 Toast.makeText(ListFoodActivity.this, msg , Toast.LENGTH_LONG).show();
             }
