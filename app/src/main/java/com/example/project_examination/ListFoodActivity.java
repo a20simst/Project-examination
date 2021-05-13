@@ -45,7 +45,7 @@ public class ListFoodActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         WebViewClient myWebViewClient = new WebViewClient();
         myWebView.setWebViewClient(myWebViewClient);
-        myWebView.loadUrl("https://www.google.se/?hl=sv");
+
 
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
