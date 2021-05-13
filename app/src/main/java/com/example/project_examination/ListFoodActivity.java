@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -27,6 +28,7 @@ import java.util.ArrayList;
 public class ListFoodActivity extends AppCompatActivity {
     private ArrayList<Food> foodList = new ArrayList<>();
     private ArrayAdapter<Food> adapter;
+    private WebView myWebView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

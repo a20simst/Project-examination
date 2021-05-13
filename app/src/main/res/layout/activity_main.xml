@@ -26,24 +26,26 @@
 
    <Button
        android:id="@+id/om_oss"
-       android:layout_width="wrap_content"
+       android:layout_width="match_parent"
        android:layout_height="wrap_content"
        app:layout_constraintBottom_toBottomOf="parent"
        app:layout_constraintLeft_toLeftOf="parent"
        app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="100dp"
        android:background="@color/teal_700"
        android:text="Om oss"
         />
     <Button
         android:id="@+id/button_food"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:backgroundTint="@color/teal_200"
-        android:text="Om oss"
+        android:text="Matfakta"
         />
 
     <Button
