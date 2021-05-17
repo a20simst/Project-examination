@@ -39,19 +39,7 @@
         android:layout_marginLeft="290dp"
         />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:text="MatAppen"
-        android:textSize="50dp"
-        android:fontFamily="monospace"
-        android:textColor="@color/white"
-        android:background="@color/teal_700"
-        android:paddingTop="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
    <Button
        android:id="@+id/om_oss"
