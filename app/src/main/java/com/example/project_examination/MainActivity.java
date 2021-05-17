@@ -20,8 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button omOss = findViewById(R.id.om_oss);
         Button listFood = findViewById(R.id.button_food);
-        Button changeThemeLight =findViewById(R.id.theme);
-        Button changeThemeDark =findViewById(R.id.theme2);
+
         ImageView imageView1 = findViewById(R.id.image1);
         ImageView imageView2 = findViewById(R.id.image2);
         ImageView imageView3 = findViewById(R.id.image3);
@@ -46,23 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(ListFoodActivity);
             }
         });
-        changeThemeLight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mainActivity.setBackgroundColor(0xFFFFFFFF);
 
-
-
-            }
-        });
-
-        changeThemeDark.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mainActivity.setBackgroundColor(Color.parseColor("#000000"));
-
-
-            }
-        });
     }
 }
