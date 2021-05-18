@@ -55,12 +55,13 @@ public class ListFoodActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Food f = foodList.get(position);
 
-                f.getName();
+                f.getID();
                 f.getLocation();
                 f.getAuxdata();
+                f.getSize();
 
                 myWebView.loadUrl(f.getAuxdata().getWiki());
-                String msg = " Name: " + f.getName()  + " Location: " + f.getLocation() ;
+                String msg = " Namn på maträtten: " + f.getID()  + " Maträtten härstammar ifrån: " + f.getLocation() + " En portion innehåller i snitt Kcal: " + f.getSize() + " Kostnaden för maträtten: " + f.getCost() ;
                 Toast.makeText(ListFoodActivity.this, msg , Toast.LENGTH_LONG).show();
             }
         });

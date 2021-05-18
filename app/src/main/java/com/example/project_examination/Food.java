@@ -2,6 +2,9 @@ package com.example.project_examination;
 
 public class Food {
 
+    public String getID() {
+        return ID;
+    }
 
     private String ID;
     private String name;
