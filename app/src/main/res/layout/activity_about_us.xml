@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+
     tools:context=".AboutUs"
     android:id="@+id/about_us">
 
@@ -12,12 +12,12 @@
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:text="Om oss"
-        android:textSize="50dp"
+        android:text="Målgrupp: Målgruppen för appen är personer som har ett allmän intresse kring mat eller mathistoria. I appen kan man lätt finna information om recept till mat och historian bakom varje maträtt. "
+        android:textSize="20dp"
         android:fontFamily="monospace"
         android:textColor="@color/white"
         android:background="@color/teal_700"
-        android:paddingTop="40dp"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:text="Om oss"
+        android:text="Ska det vara grädde i carbonaran? Kolla under länken matfakta och ta reda på ursprunget samt det rätta svaret."
         android:background="@color/teal_700"
         android:textSize="20dp"
         android:fontFamily="monospace"
@@ -45,8 +45,9 @@
 
     </TextView>
     <Button
-        android:id="@+id/back"
-        android:layout_width="50dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/Startsida"
+
         android:layout_height="50dp"
         app:layout_constraintRight_toRightOf="parent"
         android:text="Back"
