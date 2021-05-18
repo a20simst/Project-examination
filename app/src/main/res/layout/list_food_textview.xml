@@ -5,6 +5,7 @@
     android:id="@+id/list_food_textview"
     android:textSize="30dp"
     android:gravity="center"
+
     >
 
 </TextView>
