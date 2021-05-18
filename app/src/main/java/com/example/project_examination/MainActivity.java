@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView1 = findViewById(R.id.image1);
         ImageView imageView2 = findViewById(R.id.image2);
         ImageView imageView3 = findViewById(R.id.image3);
-        ConstraintLayout mainActivity = findViewById(R.id.cActivityMain);
-        ConstraintLayout aboutUsActivity = findViewById(R.id.about_us);
+
 
         Picasso.get().load("https://live.staticflickr.com/759/21103832420_94040e9f7a_b.jpg").into(imageView1);
         Picasso.get().load("https://live.staticflickr.com/3835/15017552912_538f3745a6_b.jpg").into(imageView2);

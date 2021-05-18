@@ -36,10 +36,12 @@ public class ListFoodActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_food);
         Button back = findViewById(R.id.back);
+
         ListView listView;
         listView = findViewById(R.id.list_view);
         adapter = new ArrayAdapter<Food>(ListFoodActivity.this, R.layout.list_food_textview,foodList);
         listView.setAdapter(adapter);
+
         myWebView = (WebView) findViewById(R.id.my_webview);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -117,14 +119,14 @@ public class ListFoodActivity extends AppCompatActivity {
             Log.d("TAG", json);
             Gson gson = new Gson();
 
-            Food[] mountains;
-            mountains = gson.fromJson(json,Food[].class);
+            Food[] foods;
+            foods = gson.fromJson(json,Food[].class);
 
 
             foodList.clear();
-            for (int i = 0; i < mountains.length; ++i) {
+            for (int i = 0; i < foods.length; ++i) {
 
-                foodList.add(mountains[i]);
+                foodList.add(foods[i]);
             }
             adapter.notifyDataSetChanged();
         }
